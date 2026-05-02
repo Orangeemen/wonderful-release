@@ -15,20 +15,13 @@ body:
   - type: checkboxes
     id: compliance-check
     attributes:
-      label: 📋 基础合规性检查
+      label: 📋 基础性检查
       description: 必须全部满足，否则申请将无法进入技术评估阶段
       options:
-        - label: 项目为 Public 仓库且包含明确 LICENSE 文件
+        - label: 已搜索现有 Issues，确认未重复申请
+        - label: 项目为 Public 仓库且使用开源许可证允许再分发
         - label: Release 页面包含可分发的二进制/安装包资产
         - label: 项目有持续维护记录（非归档/废弃状态）
-    validations:
-      required: true
-
-  - type: textarea
-    id: project-intro
-    attributes:
-      label: 项目简介与必要性
-      description: 简要说明项目功能与镜像的必要性
     validations:
       required: true
 
@@ -39,6 +32,15 @@ body:
       placeholder: https://github.com/owner/repo
     validations:
       required: true
+      
+  - type: textarea
+    id: project-intro
+    attributes:
+      label: 项目简介与必要性
+      description: 简要说明项目功能与镜像的必要性
+    validations:
+      required: true
+
 
   - type: checkboxes
     id: project-evaluation
@@ -83,7 +85,7 @@ body:
       description: |
         为避免存储冗余，请明确实际需要的架构/格式子集。
         留空则代表期望同步所有Release文件。
-        例：仅同步 x64/arm64 架构的.exe和.deb文件
+        例：仅同步 x64/arm64 架构的不包含运行时的.exe和.deb文件
       render: shell
     validations:
       required: false
