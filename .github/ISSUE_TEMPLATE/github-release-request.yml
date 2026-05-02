@@ -7,10 +7,6 @@ body:
     attributes:
       value: |
         感谢提交申请！请完整填写以下信息，帮助我们高效评估。
-        📌 提交前请确认：
-        - [ ] 已搜索现有 Issues，确认未重复申请
-        - [ ] 已阅读 [行为与收录规则](./POLICY.md)
-        - [ ] 项目为 Public 仓库且使用开源许可证允许再分发
 
   - type: checkboxes
     id: compliance-check
@@ -49,7 +45,7 @@ body:
       description: 请勾选符合条件的选项，以便于我们更好地评估
       options:
         - label: 属于「小而美」类型（功能聚焦 / 体积轻量 / 构建透明）
-        - label: 非 Electron 应用，或已说明需镜像 Electron 项目的具体理由
+        - label: 非 Electron 应用，或说明需镜像 Electron 项目的具体理由
         - label: Release 资产不捆绑运行时，或仅需同步不含运行时的文件
         - label: 已明确实际需要的架构/格式子集（避免全量枚举）
         - label: installer 与 portable 版内容差异显著，或已指定仅需其一
@@ -85,7 +81,7 @@ body:
       description: |
         为避免存储冗余，请明确实际需要的架构/格式子集。
         留空则代表期望同步所有Release文件。
-        例：仅同步 x64/arm64 架构的不包含运行时的.exe和.deb文件
+        例：希望镜像 x64/arm64 架构的不包含运行时的.exe和.deb文件
       render: shell
     validations:
       required: false
