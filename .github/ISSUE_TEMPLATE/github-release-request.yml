@@ -1,4 +1,4 @@
-name: 🐙 GitHub Release 镜像申请
+name: GitHub Release 镜像申请
 description: 申请镜像托管在 GitHub 的项目 Release 资产
 title: "[GitHub Release]: "
 labels: ["github-release", "pending"]
