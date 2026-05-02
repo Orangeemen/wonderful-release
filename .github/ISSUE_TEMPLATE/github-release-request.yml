@@ -62,26 +62,14 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: version-strategy
-    attributes:
-      label: 版本同步策略
-      options:
-        - 仅最新稳定版（推荐）
-        - 最近 3 个稳定版
-        - 最近 5 个稳定版
-        - 包含 pre-release（需说明理由）
-    validations:
-      required: true
-
   - type: textarea
     id: asset-filter
     attributes:
       label: 过滤规则（强烈建议填写）
       description: |
         为避免存储冗余，请明确实际需要的架构/格式子集。
-        留空则代表期望同步所有Release文件。
-        例：希望镜像 x64/arm64 架构的不包含运行时的.exe和.deb文件
+        留空则代表期望同步所有 Release 文件。
+        例：希望镜像 x64/arm64 架构的不包含运行时的 .exe 和 .deb 文件
       render: shell
     validations:
       required: false
@@ -90,8 +78,7 @@ body:
   - type: input
     id: estimated-size
     attributes:
-      label: 预估单版本/总存储占用
-      placeholder: 例：~50MB/版本，历史 5 个版本约 250MB
+      label: 预估总存储占用
     validations:
       required: true
 
