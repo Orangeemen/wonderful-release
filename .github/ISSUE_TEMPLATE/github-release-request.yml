@@ -13,16 +13,16 @@ body:
         - [ ] 项目为 Public 仓库且使用开源许可证允许再分发
 
   - type: checkboxes
-    id: checklist
+    id: compliance-check
     attributes:
-      label: 确认事项
+      label: 📋 基础合规性检查
+      description: 必须全部满足，否则申请将无法进入技术评估阶段
       options:
-        - label: 已搜索现有 Issues，确认未重复申请
-          required: true
-        - label: 已阅读 [行为与收录规则](./POLICY.md)
-          required: true
-        - label: 已确认项目为 Public 仓库且使用开源许可证允许再分发
-          required: true
+        - label: 项目为 Public 仓库且包含明确 LICENSE 文件
+        - label: Release 页面包含可分发的二进制/安装包资产
+        - label: 项目有持续维护记录（非归档/废弃状态）
+    validations:
+      required: true
 
   - type: textarea
     id: project-intro
@@ -40,16 +40,27 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: project-category
+  - type: checkboxes
+    id: project-evaluation
     attributes:
-      label: 项目类型自评
+      label: 🎯 项目评估（请按照实际情况勾选）
+      description: 请勾选符合条件的选项，以便于我们更好地评估
       options:
-        - 🪶 小而美（轻量应用，推荐）
-        - 🔧 原生桌面应用（比如C#等）
-        - 🔗 Release自带运行时的项目（.NET/Java/Python等）
-        - ⚡ Electron/Chromium 应用（需额外说明）
-        - ❓ 其他/不确定
+        - label: 属于「小而美」类型（功能聚焦 / 体积轻量 / 构建透明）
+        - label: 非 Electron 应用，或已说明需镜像 Electron 项目的具体理由
+        - label: Release 资产不捆绑运行时，或仅需同步不含运行时的文件
+        - label: 已明确实际需要的架构/格式子集（避免全量枚举）
+        - label: installer 与 portable 版内容差异显著，或已指定仅需其一
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: storage-assessment
+    attributes:
+      label: 存储与必要性
+      options:
+        - label: 单个项目预估存储合理（通常 <10GB，或已提供过滤方案）
+        - label: 已检查不存在国内官方可用分发源（或现有源体验不佳）
     validations:
       required: true
 
