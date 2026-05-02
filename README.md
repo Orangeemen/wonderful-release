@@ -1,4 +1,4 @@
-# 🐙 Wonderfor GitHub Release Mirrors
+# Wonderfor GitHub Release Mirrors
 
 <div align="center">
   <img src="https://mirrors.sdu.edu.cn/assets/logo_big-Dn2qexAM.png" 
@@ -9,7 +9,8 @@
 
 这个仓库存放优秀 GitHub 仓库的列表，以便镜像站定期下载这些仓库的最新的 GitHub Release。你也可以在这里提出新的GitHub Release镜像申请或进行相关讨论。
 
-仓库列表点击 [这里](./repos.yaml) 打开。镜像站在 [这里](https://mirrors.sdu.edu.cn/github-release/) 缓存了这些安装包。
+### 仓库列表点击 [这里](./repos.yaml) 打开。镜像站在 [这里](https://mirrors.sdu.edu.cn/github-release/) 缓存了这些安装包。
+
 ---
 
 ## 快速开始
@@ -21,7 +22,7 @@
 3. **填写完整信息**：帮助维护者高效评估
 
 ### 通用软件源同步申请、BUG反馈等其他事项  
-> 此类申请请前往主仓库 👉 [🔗 Issues](https://github.com/SDU-Mirrors/issues)
+> 此类申请请前往主仓库 👉 [SDU-Mirrors/issues](https://github.com/SDU-Mirrors/issues)
 
 
 ---
