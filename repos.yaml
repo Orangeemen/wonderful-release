@@ -1,0 +1,47 @@
+repos:
+  - texstudio-org/texstudio # LaTeX 的前端书写工具
+  - ventoy/Ventoy # 多系统启动 U 盘解决方案
+  - YerongAI/Office-Tool # 部署 MS Office 的工具，非开源
+  - rizonesoft/Notepad3 # 文本编辑工具
+  - obsproject/obs-studio # 录屏、直播工具
+  - pbatard/rufus # 可启动 U 盘镜像写入工具
+  - VSCodium/vscodium # VSCode 的一个“自由”许可证的发行版
+  - git-for-windows/git # Windows 端的 git 命令行
+  - dbeaver/dbeaver # 数据库前端工具
+  - agalwood/Motrix # 基于 aria2 的下载工具
+  - aria2/aria2 # 命令行多线程下载工具
+  - rime/weasel # 中州韻輸入法引擎 - 小狼毫（Windows）
+  - rime/squirrel # 中州韻輸入法引擎 - 鼠鬚管（macOS）
+  - M2Team/NanaZip # 非官方 7-Zip，商店应用，增加了 Win11 右键菜单支持
+  - peazip/PeaZip # 压缩解压软件
+  - zufuliu/notepad2 # 文本编辑工具 Notepad2 的 fork 的 fork
+  - microsoft/PowerToys # 增强 Windows 生产力的小工具
+  - PowerShell/PowerShell
+  - Molunerfinn/PicGo # 图床上传工具
+  - caddyserver/caddy # HTTP 服务器
+  - henrypp/memreduct # 针对 Windows 的内存清理工具
+  - raspberrypi/rpi-eeprom # 树莓派 4/5 的 bootloader 固件
+  - DDoSolitary/LxRunOffline # 从自定义 rootfs 手动安装 WSL 的工具
+  - ethereum/solidity # 以太坊 Solidity 智能合约编译器
+  - ethereum/remix-project # 以太坊 Solidity IDE
+  - BluePointLilac/ContextMenuManager # Windows 右键菜单管理小工具
+  - ShareX/ShareX # 截图工具
+  - rustdesk/rustdesk # 远程控制软件
+  - musescore/MuseScore # 音乐制谱软件
+  - jgraph/drawio-desktop # draw.io 绘图软件
+  - svenstaro/miniserve # 快速部署的 HTTP 文件服务器
+  - arduino/arduino-ide
+  - espressif/arduino-esp32 # ESP32 的 Arduino IDE 支持
+  - FreeCAD/FreeCAD
+  - niXman/mingw-builds-binaries # 第三方 MinGW-w64 构建
+  - CloverHackyColor/CloverBootloader # Clover
+  - Chuyu-Team/Dism-Multi-language # Windows 综合优化工具，非开源
+  - snowie2000/mactype # Windows 字体渲染工具
+  - paintdotnet/release # 图像处理工具，非开源
+  - Genymobile/scrcpy # 开源安卓手机投屏控制工具
+  - NickeManarin/ScreenToGif # 开源的 GIF 动图录制工具
+  - localsend/localsend # 跨平台的本地文件传输工具
+  - Blinue/Magpie # Windows 窗口缩放工具
+  - mvdan/sh # Shell 脚本格式化/检查工具
+  # 以下为山大相关仓库
+  - SadPencil/sdunetd # 山大校园网登录守护程序，可部署在电脑和路由器
